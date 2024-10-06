@@ -5,7 +5,7 @@ Program to determine score status
 def main():
     # Get user score
     score = float(input("Enter score: "))
-    result = evaluate_score(score, "User")  # Call the function to evaluate the score
+    result = evaluate_score(score, "User")  # Call function to evaluate the score
     print(result)  # Print the result
 
 def evaluate_score(score, name):
