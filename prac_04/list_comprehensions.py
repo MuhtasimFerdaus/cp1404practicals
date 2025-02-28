@@ -25,7 +25,7 @@ print(full_initials)
 a_names = [name for name in names if name.startswith('A')]
 print(a_names)
 
-# and here's the join string method being used to create a single string from the names like:
+# join string method being used to create a single string from the names like:
 # 'Ada Alan Angel Bob Jimi'
 print(" ".join(sorted(names)))
 
@@ -40,13 +40,13 @@ numbers = [int(num) for num in almost_numbers]
 print(numbers)
 
 #list comprehension to create a list of only the numbers that are
-# greater than 9 from the numbers (not strings) you just created
+# greater than 9 from the numbers just created
 greater_than_nine = [num for num in numbers if num > 9]
 print(greater_than_nine)
 
 #a list comprehension and the join string method
 # to create a string (not list) of the last names for those full names longer than 11 characters
-# the result should be: 'Harlem, Hendrix, Lovelace'
+
 long_last_names = ", ".join([name.split()[1] for name in full_names if len(name) > 11])
 print(long_last_names)
 
